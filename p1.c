@@ -8,19 +8,15 @@ void main(){
     scanf("%[^\n]",str);
     printf("the original string is :%s\n",str);
     printf("the string len is %ld\n",strlen(str));
-    //my_strlen(str);
     printf("the string len is %d\n",my_strlen(str));
 }
 unsigned int my_strlen(const char*p)
 {
     unsigned int len=0;
     while(*p)
-    {
-        
+    {  
         len++;
         p++;
-        //printf("done\n");
-
     }
     return len;
 }
